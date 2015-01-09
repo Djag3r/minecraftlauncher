@@ -1,0 +1,17 @@
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\bin\Debug\Minecraft Launcher (by GameFuN™).exe.config
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\obj\x86\Debug\Minecraft Launcher (by GameFuN™).exe
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\obj\x86\Debug\Minecraft Launcher (by GameFuN™).pdb
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\bin\Debug\Minecraft Launcher (by GameFuN™).exe.manifest
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\bin\Debug\Minecraft Launcher (by GameFuN™).application
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\bin\Debug\Minecraft Launcher (by GameFuN™).exe
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\bin\Debug\Minecraft Launcher (by GameFuN™).pdb
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\obj\x86\Debug\Minecraft_Launcher.General.resources
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\obj\x86\Debug\Minecraft_Launcher.Properties.Resources.resources
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\obj\x86\Debug\Minecraft Launcher.csproj.GenerateResource.Cache
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\obj\x86\Debug\Minecraft Launcher (by GameFuN™).exe.manifest
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\obj\x86\Debug\Minecraft Launcher (by GameFuN™).application
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\obj\x86\Debug\Minecraft Launcher.csprojResolveAssemblyReference.cache
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\obj\x86\Debug\Minecraft_Launcher.Listening.resources
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\obj\x86\Debug\Minecraft_Launcher.Updating.resources
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\obj\x86\Debug\Minecraft_Launcher.About.resources
+C:\Users\Djager\Documents\Visual Studio 2010\Projects\Minecraft Launcher\Minecraft Launcher (by GameFuN™)\bin\Debug\4MainLauncherAPI.dll
