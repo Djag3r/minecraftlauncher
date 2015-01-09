@@ -190,7 +190,6 @@
     <None Include="Resources\background1.png" />
     <None Include="Resources\background2.png" />
     <None Include="Resources\background3.png" />
-    <None Include="Resources\gfn80x80.png" />
     <None Include="Resources\background4.png" />
     <None Include="Resources\gamefun.png" />
     <None Include="Resources\e-mail.png" />
@@ -198,8 +197,6 @@
     <Content Include="Resources\minecraft.ico" />
     <Content Include="Resources\background.png" />
     <None Include="Resources\minecraft.png" />
-    <None Include="Resources\ny.png" />
-    <None Include="Resources\ny2.png" />
     <Content Include="Resources\password.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

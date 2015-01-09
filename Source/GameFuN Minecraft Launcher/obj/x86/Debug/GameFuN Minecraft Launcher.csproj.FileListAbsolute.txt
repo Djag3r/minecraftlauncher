@@ -73,3 +73,20 @@ D:\Important\Documents\Projects VS\Projects\GameFuN Minecraft Launcher\GameFuN M
 D:\Important\Documents\Projects VS\Projects\GameFuN Minecraft Launcher\GameFuN Minecraft Launcher\obj\x86\Debug\GameFuN Minecraft Launcher.csproj.GenerateResource.Cache
 D:\Important\Documents\Projects VS\Projects\GameFuN Minecraft Launcher\GameFuN Minecraft Launcher\obj\x86\Debug\Minecraft Launcher.exe.manifest
 D:\Important\Documents\Projects VS\Projects\GameFuN Minecraft Launcher\GameFuN Minecraft Launcher\obj\x86\Debug\Minecraft Launcher.application
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\bin\Debug\Minecraft Launcher.exe.config
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\obj\x86\Debug\Minecraft Launcher.exe
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\obj\x86\Debug\Minecraft Launcher.pdb
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\bin\Debug\Minecraft Launcher.exe.manifest
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\bin\Debug\Minecraft Launcher.application
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\bin\Debug\Minecraft Launcher.exe
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\bin\Debug\Minecraft Launcher.pdb
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\obj\x86\Debug\GameFuN Minecraft Launcher.csprojResolveAssemblyReference.cache
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\obj\x86\Debug\gfn_mc_launcher.About.resources
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\obj\x86\Debug\gfn_mc_launcher.General.resources
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\obj\x86\Debug\gfn_mc_launcher.Listening.resources
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\obj\x86\Debug\gfn_mc_launcher.OSInfo.resources
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\obj\x86\Debug\gfn_mc_launcher.Properties.Resources.resources
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\obj\x86\Debug\gfn_mc_launcher.Updating.resources
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\obj\x86\Debug\GameFuN Minecraft Launcher.csproj.GenerateResource.Cache
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\obj\x86\Debug\Minecraft Launcher.exe.manifest
+D:\Important\GitHub\Minecraft_Launcher\Source\GameFuN Minecraft Launcher\obj\x86\Debug\Minecraft Launcher.application

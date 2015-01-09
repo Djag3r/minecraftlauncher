@@ -38,15 +38,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -140,41 +137,44 @@
             this.label5.TabIndex = 26;
             this.label5.Text = "Build: 5D03";
             // 
-            // pictureBox2
+            // button2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::gfn_mc_launcher.Properties.Resources.windows;
-            this.pictureBox2.Location = new System.Drawing.Point(47, 108);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox2, "Просмотрите конфигурацию вашего ПК, нажав на этот значок");
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = global::gfn_mc_launcher.Properties.Resources.vk;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(9, 108);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(32, 32);
+            this.button2.TabIndex = 30;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pictureBox3
+            // button3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::gfn_mc_launcher.Properties.Resources.vk;
-            this.pictureBox3.Location = new System.Drawing.Point(9, 108);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.TabIndex = 28;
-            this.pictureBox3.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox3, "Открыть группу Вконтакте");
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImage = global::gfn_mc_launcher.Properties.Resources.windows;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(47, 108);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(32, 32);
+            this.button3.TabIndex = 31;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // pictureBox4
+            // button4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::gfn_mc_launcher.Properties.Resources.e_mail;
-            this.pictureBox4.Location = new System.Drawing.Point(85, 108);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox4.TabIndex = 29;
-            this.pictureBox4.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox4, "Отправка письма на gamefun.offmail@gmail.com через Microsoft Outlook");
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = global::gfn_mc_launcher.Properties.Resources.e_mail;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(85, 108);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(32, 32);
+            this.button4.TabIndex = 32;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // About
             // 
@@ -183,9 +183,9 @@
             this.BackgroundImage = global::gfn_mc_launcher.Properties.Resources.background2;
             this.ClientSize = new System.Drawing.Size(323, 150);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -203,9 +203,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,9 +218,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

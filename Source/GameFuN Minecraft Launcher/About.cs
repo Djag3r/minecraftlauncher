@@ -70,18 +70,18 @@ namespace gfn_mc_launcher
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"http://vk.com/gamefun_vk"); //Открывается страница группы в браузере по умолчанию
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
             OSInfo osinfo = new OSInfo();
             osinfo.ShowDialog();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            Process.Start(@"http://vk.com/gamefun_vk"); //Открывается страница группы в браузере по умолчанию
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             //Process.Start(@"http://vk.com/write?email=gamefun.offmail@gmail.com"); //Открывается страница сайта в браузере по умолчанию
             Process.Start(@"mailto:gamefun.offmail@gmail.com"); //Отправка письма на электронную почту через протокол MAILTO:
