@@ -3,17 +3,11 @@
 //=================================\\
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.Management;
-using System.Net;
 using System.Net.NetworkInformation;
-using System.Diagnostics;
+using System.Convert;
 
 namespace gfn_mc_launcher
 {
@@ -23,6 +17,17 @@ namespace gfn_mc_launcher
         {
             InitializeComponent();
         }
+
+        ManagementObjectSearcher videosearcher =
+        new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_VideoController");
+        ManagementObjectSearcher processorsearcher =
+        new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_Processor");
+        ManagementObjectSearcher memorysearcher =
+        new ManagementObjectSearcher("\\root\\CIMV2", "SELECT * From Win32_ComputerSystem");
+        ManagementObjectSearcher hddsearcher =
+        new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_DiskDrive");
+        ManagementObjectSearcher mbsearcher =
+        new ManagementObjectSearcher("\\root\\CIMV2", "SELECT * From Win32_BaseBoard");
 
         private string GetOSName()
         {
@@ -85,32 +90,9 @@ namespace gfn_mc_launcher
 
         private void OSInfo_Load(object sender, EventArgs e)
         {
-            PerformanceCounter ramCounter = new PerformanceCounter("Memory", "Available MBytes");
-            label12.Text = ramCounter.NextValue() + " MB";
             label2.Text = GetOSName();
-            label11.Text = System.Environment.ProcessorCount.ToString();
-            if(System.Environment.ProcessorCount < 2)
-            {
-                label17.Text = "логическое ядро";
-            }
-            if(System.Environment.ProcessorCount == 2)
-            {
-                label17.Text = "логических ядра";
-            }
-            if (System.Environment.ProcessorCount == 3)
-            {
-                label17.Text = "логических ядра";
-            }
-            if (System.Environment.ProcessorCount == 4)
-            {
-                label17.Text = "логических ядра";
-            }
-            if(System.Environment.ProcessorCount > 2)
-            {
-                label17.Text = "логических ядер";
-            }
 
-            if (System.Environment.Is64BitOperatingSystem == true)
+            if (Environment.Is64BitOperatingSystem == true)
             {
                 label15.Text = "64 bit";
             }
@@ -118,10 +100,10 @@ namespace gfn_mc_launcher
             {
                 label15.Text = "32 bit";
             }
-            label16.Text = System.Environment.MachineName.ToString();
+            label16.Text = Environment.MachineName.ToString();
             //label11.Text = System.Management.Instrumentation.
-            double h = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width;
-            double w = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height;
+            double h = Screen.PrimaryScreen.Bounds.Width;
+            double w = Screen.PrimaryScreen.Bounds.Height;
             label18.Text = h+"x"+w;
             IPStatus status = IPStatus.Unknown;
             try 
@@ -142,7 +124,23 @@ namespace gfn_mc_launcher
                 label19.Text = "Disconnect";
             }
 
-            timer1.Start();
+            foreach (ManagementObject queryObj in memorysearcher.Get())
+            {
+                double ramsize = ToDouble(queryObj["TotalPhysicalMemory"]);
+                ramsize = Math.Round(ramsize / 1048576);
+                label12.Text = ramsize.ToString() + " MB";
+            }
+            foreach (ManagementObject queryObj in videosearcher.Get())
+            { label11.Text = queryObj["Description"].ToString(); }
+            foreach (ManagementObject queryObj in processorsearcher.Get())
+            { label17.Text = queryObj["Name"].ToString(); }
+            foreach (ManagementObject queryObj in hddsearcher.Get())
+            {
+                label20.Text = queryObj["Model"].ToString();
+                label22.Text = Math.Round(ToDouble(queryObj["Size"]) / 1024 / 1024 / 1024, 2).ToString() + " GB";
+            }
+            foreach (ManagementObject queryObj in mbsearcher.Get())
+            { label23.Text = queryObj["Manufacturer"].ToString() + ", " + queryObj["Product"].ToString(); }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -191,16 +189,6 @@ namespace gfn_mc_launcher
                 Point loc = new Point(Location.X + dx, Location.Y + dy);
                 Location = loc;
                 last = cur;
-            }
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            progressBar1.Increment(+1);
-            if (progressBar1.Value == 1)
-            {
-                progressBar1.Refresh();
-                OSInfo_Load(sender, e);
             }
         }
     }

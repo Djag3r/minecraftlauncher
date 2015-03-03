@@ -90,7 +90,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 23;
-            this.label3.Text = "Версия: 0.5";
+            this.label3.Text = "Версия: 0.6";
             // 
             // pictureBox1
             // 
@@ -135,7 +135,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 13);
             this.label5.TabIndex = 26;
-            this.label5.Text = "Build: 5D03";
+            this.label5.Text = "Build: 6D10";
             // 
             // button2
             // 
