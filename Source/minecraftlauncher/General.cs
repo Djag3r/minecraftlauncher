@@ -38,7 +38,7 @@ namespace minecraftlauncher
 
         private void Site_Click(object sender, EventArgs e)
         {
-            //Process.Start(@"http://thegamefunproject.com");
+            //Process.Start(@"http://siteisdeveloping.com");
         }
 
         private void General_Load(object sender, EventArgs e)
