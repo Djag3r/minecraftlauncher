@@ -146,9 +146,8 @@
             this.build.ForeColor = System.Drawing.Color.White;
             this.build.Location = new System.Drawing.Point(74, 57);
             this.build.Name = "build";
-            this.build.Size = new System.Drawing.Size(33, 13);
+            this.build.Size = new System.Drawing.Size(0, 13);
             this.build.TabIndex = 34;
-            this.build.Text = "6D20";
             this.tooltip.SetToolTip(this.build, "Номер построения (только в DEBUG-релизах)");
             // 
             // vk
@@ -200,9 +199,8 @@
             this.version.ForeColor = System.Drawing.Color.White;
             this.version.Location = new System.Drawing.Point(49, 44);
             this.version.Name = "version";
-            this.version.Size = new System.Drawing.Size(22, 13);
+            this.version.Size = new System.Drawing.Size(0, 13);
             this.version.TabIndex = 33;
-            this.version.Text = "0.6";
             // 
             // About
             // 
@@ -230,6 +228,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "О программе";
+            this.Load += new System.EventHandler(this.About_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gamefun_box)).EndInit();
             this.toppanel.ResumeLayout(false);
             this.toppanel.PerformLayout();

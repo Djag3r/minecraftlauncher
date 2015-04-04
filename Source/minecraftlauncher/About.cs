@@ -79,5 +79,11 @@ namespace minecraftlauncher
             //Process.Start(@"http://vk.com/write?email=gamefun.offmail@gmail.com"); //Открывается страница сайта в браузере по умолчанию
             Process.Start(@"mailto:gamefun.offmail@gmail.com"); //Отправка письма на электронную почту через протокол MAILTO:
         }
+
+        private void About_Load(object sender, EventArgs e)
+        {
+            version.Text = "0.6";
+            build.Text = "6D40";
+        }
     }
 }

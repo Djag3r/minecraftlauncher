@@ -29,11 +29,11 @@ namespace minecraftlauncher
 
         private string GetOSName()
         {
-            OperatingSystem os = Environment.OSVersion;
             string osName = "Unknown";
+            OperatingSystem os = Environment.OSVersion;
+            PlatformID pid = os.Platform;
 
-
-            switch (os.Platform)
+            switch (pid)
             {
                 case PlatformID.Win32Windows:
                     switch (os.Version.Minor)
@@ -74,13 +74,43 @@ namespace minecraftlauncher
                             else if (os.Version.Minor == 2)
                                 osName = "Windows 8";
                             break;
-                        case 7:
-                            if (os.Version.Minor == 0)
-                                osName = "Windows 8.1";
-                            break;
-
                     }
                     break;
+            }
+
+            var sccmManagementScope = new ManagementScope(@"\\" + Environment.MachineName + @"\root\cimv2");
+            var searchResult = new ManagementObjectSearcher(sccmManagementScope, new WqlObjectQuery("SELECT Version FROM Win32_OperatingSystem"));
+            var resultSet = searchResult.Get();
+
+            foreach (ManagementObject managementObject in resultSet)
+            {
+                string osVersion = managementObject["Version"].ToString();
+                switch (osVersion)
+                {
+                    case "6.3.9600":
+                        osName = "Windows 8.1";
+                        break;
+                    #region Ёксперементальна€ поддержка Windows 10 (Technical Preview)
+                    case "6.4.9841":
+                        osName = "Windows 10 (Technical Preview build 9841)";
+                        break;
+                    case "6.4.9879":
+                        osName = "Windows 10 (Technical Preview build 9879)";
+                        break;
+                    case "10.0.9926":
+                        osName = "Windows 10 (Technical Preview build 9926)";
+                        break;
+                    case "10.0.9888":
+                        osName = "Windows 10 (Technical Preview build 9888)";
+                        break;
+                    case "10.0.10041":
+                        osName = "Windows 10 (Technical Preview build 10041)";
+                        break;
+                    case "10.0.10049":
+                        osName = "Windows 10 (Technical Preview build 10049) (SPARTAN!)"; /*\r\n*/
+                        break;
+                        #endregion
+                }
             }
 
             return osName;

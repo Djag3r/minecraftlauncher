@@ -43,24 +43,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Minecraft Launcher.exe" size="1319424">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Minecraft Launcher.exe" size="1321472">
       <assemblyIdentity name="Minecraft Launcher" version="5.0.0.3" publicKeyToken="ACFCB1F8D5F8918E" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>cBmrV9MeuXs3YCQ89/AhNx3Zc/E=</dsig:DigestValue>
+        <dsig:DigestValue>jkV+4cVvdmYKrEFa8WrFaoxbd0Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Minecraft Launcher.exe.config" size="1595">
+  <file name="Minecraft Launcher.exe.config" size="1592">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Ab/0NJ5jg91RnTTgr+qxC04uj1M=</dsig:DigestValue>
+      <dsig:DigestValue>RfnmVMWHSh3TD4xYk7DJ8Wq4Dp0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\background.png" size="129606">
