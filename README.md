@@ -4,4 +4,4 @@ Please, use MS Visual Studio 2010 or better.
 The program interface on RUSSIAN language.
 
 # Official Drive
-https://drive.google.com/drive/#folders/0BzXBt7LfosHYYVktVDRNZ2x3dUk
+https://drive.google.com/open?id=0BzXBt7LfosHYYVktVDRNZ2x3dUk&authuser=0
