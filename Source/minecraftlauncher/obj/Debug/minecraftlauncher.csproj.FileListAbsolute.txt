@@ -14,3 +14,4 @@ D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\Minecra
 D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\MinecraftLauncher.application
 D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\MinecraftLauncher.exe
 D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\MinecraftLauncher.pdb
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\minecraftlauncher.csprojResolveAssemblyReference.cache
