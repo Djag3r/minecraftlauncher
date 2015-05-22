@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Management;
 using System.Net.NetworkInformation;
-using System.Convert;
+using static System.Convert;
 
 namespace minecraftlauncher
 {
@@ -90,7 +90,7 @@ namespace minecraftlauncher
                     case "6.3.9600":
                         osName = "Windows 8.1";
                         break;
-                    #region Ёксперементальна€ поддержка Windows 10 (Technical Preview)
+                    #region Experemental support for Windows 10 (Technical Preview)
                     case "6.4.9841":
                         osName = "Windows 10 (Technical Preview build 9841)";
                         break;
@@ -108,6 +108,12 @@ namespace minecraftlauncher
                         break;
                     case "10.0.10049":
                         osName = "Windows 10 (Technical Preview build 10049) (SPARTAN!)"; /*\r\n*/
+                        break;
+                    case "10.0.10074":
+                        osName = "Windows 10 (Technical Preview build 10074) (SPARTAN!)"; /*\r\n*/
+                        break;
+                    case "10.0.10122":
+                        osName = "Windows 10 (Technical Preview build 10122) (SPARTAN!)"; /*\r\n*/
                         break;
                         #endregion
                 }

@@ -15,3 +15,4 @@ D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\x86\Debug\min
 D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\x86\Debug\minecraftlauncher.csproj.GenerateResource.Cache
 D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\x86\Debug\Minecraft Launcher.exe.manifest
 D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\x86\Debug\Minecraft Launcher.application
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\bin\Debug\MinecraftLauncher.exe.config

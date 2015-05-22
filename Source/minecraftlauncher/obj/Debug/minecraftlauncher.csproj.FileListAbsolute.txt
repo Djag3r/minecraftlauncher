@@ -1,0 +1,16 @@
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\bin\Debug\MinecraftLauncher.exe.config
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\bin\Debug\MinecraftLauncher.exe.manifest
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\bin\Debug\MinecraftLauncher.application
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\bin\Debug\MinecraftLauncher.exe
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\bin\Debug\MinecraftLauncher.pdb
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\minecraftlauncher.About.resources
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\minecraftlauncher.General.resources
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\minecraftlauncher.Listening.resources
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\minecraftlauncher.OSInfo.resources
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\minecraftlauncher.Properties.Resources.resources
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\minecraftlauncher.Updating.resources
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\minecraftlauncher.csproj.GenerateResource.Cache
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\MinecraftLauncher.exe.manifest
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\MinecraftLauncher.application
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\MinecraftLauncher.exe
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\MinecraftLauncher.pdb
