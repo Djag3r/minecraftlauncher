@@ -8,3 +8,6 @@ https://drive.google.com/open?id=0BzXBt7LfosHYYVktVDRNZ2x3dUk&authuser=0
 
 # Download
 You also can to download latest Minecraft Launcher build from Source/minecraftlauncher/bin/Debug/MinecraftLauncher.exe
+
+# See Also
+Console Minecraft Launcher: https://github.com/Djag3r/consoleminecraftlauncher
