@@ -98,7 +98,7 @@ namespace minecraftlauncher
                         osName = "Windows 10 (Technical Preview build 9879)";
                         break;
                     case "10.0.9926":
-                        osName = "Windows 10 (Technical Preview build 9926)";
+                        osName = "Windows 10 (Technical Preview build 9926) (CORTANA!)";
                         break;
                     case "10.0.9888":
                         osName = "Windows 10 (Technical Preview build 9888)";
@@ -109,11 +109,26 @@ namespace minecraftlauncher
                     case "10.0.10049":
                         osName = "Windows 10 (Technical Preview build 10049) (SPARTAN!)"; /*\r\n*/
                         break;
+                    case "10.0.10056":
+                        osName = "Windows 10 (Technical Preview build 10056)";
+                        break;
+                    case "10.0.10061":
+                        osName = "Windows 10 (Technical Preview build 10061)";
+                        break;
                     case "10.0.10074":
-                        osName = "Windows 10 (Technical Preview build 10074) (SPARTAN!)"; /*\r\n*/
+                        osName = "Windows 10 (Technical Preview build 10074)";
+                        break;
+                    case "10.0.10114":
+                        osName = "Windows 10 (Technical Preview build 10114)";
+                        break;
+                    case "10.0.10120":
+                        osName = "Windows 10 (Technical Preview build 10120)";
                         break;
                     case "10.0.10122":
-                        osName = "Windows 10 (Technical Preview build 10122) (SPARTAN!)"; /*\r\n*/
+                        osName = "Windows 10 (Technical Preview build 10122)";
+                        break;
+                    case "10.0.10125":
+                        osName = "Windows 10 (Technical Preview build 10125)";
                         break;
                         #endregion
                 }
@@ -146,7 +161,7 @@ namespace minecraftlauncher
             } 
             catch 
             {
-                //lal
+                //kek
             }
  
             if (status == IPStatus.Success) 
