@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Resources\minecraft.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="MinecraftLauncher" version="5.0.0.3" publicKeyToken="ACFCB1F8D5F8918E" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="MinecraftLauncher" version="5.0.0.3" language="neutral" processorArchitecture="msil" />
     <commandLine file="MinecraftLauncher.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -44,13 +44,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MinecraftLauncher.exe" size="1322496">
-      <assemblyIdentity name="MinecraftLauncher" version="5.0.0.3" publicKeyToken="ACFCB1F8D5F8918E" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="MinecraftLauncher" version="5.0.0.3" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>IuWdkp7I9vGRrRKF6qE0SoJx/ZA=</dsig:DigestValue>
+        <dsig:DigestValue>EXIasiCYZQweIIXrkHE2K63Fiq0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

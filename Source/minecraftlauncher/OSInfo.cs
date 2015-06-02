@@ -107,7 +107,7 @@ namespace minecraftlauncher
                         osName = "Windows 10 (Technical Preview build 10041)";
                         break;
                     case "10.0.10049":
-                        osName = "Windows 10 (Technical Preview build 10049) (SPARTAN!)"; /*\r\n*/
+                        osName = "Windows 10 (Technical Preview build 10049) (SPARTAN!)";
                         break;
                     case "10.0.10056":
                         osName = "Windows 10 (Technical Preview build 10056)";
@@ -129,6 +129,9 @@ namespace minecraftlauncher
                         break;
                     case "10.0.10125":
                         osName = "Windows 10 (Technical Preview build 10125)";
+                        break;
+                    case "10.0.10130":
+                        osName = "Windows 10 (Technical Preview build 10130)";
                         break;
                         #endregion
                 }
