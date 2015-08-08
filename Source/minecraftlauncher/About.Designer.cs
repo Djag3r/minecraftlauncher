@@ -34,18 +34,18 @@
             this.copyleftlabel = new System.Windows.Forms.Label();
             this.namelabel = new System.Windows.Forms.Label();
             this.versionlabel = new System.Windows.Forms.Label();
-            this.gamefun_box = new System.Windows.Forms.PictureBox();
             this.toppanel = new System.Windows.Forms.Panel();
             this.toplabel = new System.Windows.Forms.Label();
             this.buildlabel = new System.Windows.Forms.Label();
             this.tooltip = new System.Windows.Forms.ToolTip(this.components);
             this.build = new System.Windows.Forms.Label();
-            this.vk = new System.Windows.Forms.Button();
-            this.windows = new System.Windows.Forms.Button();
-            this.email = new System.Windows.Forms.Button();
             this.version = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.gamefun_box)).BeginInit();
+            this.email = new System.Windows.Forms.Button();
+            this.windows = new System.Windows.Forms.Button();
+            this.vk = new System.Windows.Forms.Button();
+            this.gamefun_box = new System.Windows.Forms.PictureBox();
             this.toppanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gamefun_box)).BeginInit();
             this.SuspendLayout();
             // 
             // ok
@@ -53,7 +53,7 @@
             this.ok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ok.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ok.ForeColor = System.Drawing.Color.White;
-            this.ok.Location = new System.Drawing.Point(229, 117);
+            this.ok.Location = new System.Drawing.Point(169, 117);
             this.ok.Name = "ok";
             this.ok.Size = new System.Drawing.Size(79, 23);
             this.ok.TabIndex = 20;
@@ -93,16 +93,6 @@
             this.versionlabel.Size = new System.Drawing.Size(47, 13);
             this.versionlabel.TabIndex = 23;
             this.versionlabel.Text = "Версия:";
-            // 
-            // gamefun_box
-            // 
-            this.gamefun_box.BackColor = System.Drawing.Color.Transparent;
-            this.gamefun_box.Image = global::minecraftlauncher.Properties.Resources.gamefun;
-            this.gamefun_box.Location = new System.Drawing.Point(229, 31);
-            this.gamefun_box.Name = "gamefun_box";
-            this.gamefun_box.Size = new System.Drawing.Size(79, 80);
-            this.gamefun_box.TabIndex = 24;
-            this.gamefun_box.TabStop = false;
             // 
             // toppanel
             // 
@@ -150,19 +140,29 @@
             this.build.TabIndex = 34;
             this.tooltip.SetToolTip(this.build, "Номер построения (только в DEBUG-релизах)");
             // 
-            // vk
+            // version
             // 
-            this.vk.BackColor = System.Drawing.Color.Transparent;
-            this.vk.BackgroundImage = global::minecraftlauncher.Properties.Resources.vk;
-            this.vk.FlatAppearance.BorderSize = 0;
-            this.vk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.vk.Location = new System.Drawing.Point(9, 108);
-            this.vk.Name = "vk";
-            this.vk.Size = new System.Drawing.Size(32, 32);
-            this.vk.TabIndex = 30;
-            this.tooltip.SetToolTip(this.vk, "Открыть группу ВК");
-            this.vk.UseVisualStyleBackColor = false;
-            this.vk.Click += new System.EventHandler(this.vk_Click);
+            this.version.AutoSize = true;
+            this.version.BackColor = System.Drawing.Color.Transparent;
+            this.version.ForeColor = System.Drawing.Color.White;
+            this.version.Location = new System.Drawing.Point(49, 44);
+            this.version.Name = "version";
+            this.version.Size = new System.Drawing.Size(0, 13);
+            this.version.TabIndex = 33;
+            // 
+            // email
+            // 
+            this.email.BackColor = System.Drawing.Color.Transparent;
+            this.email.BackgroundImage = global::minecraftlauncher.Properties.Resources.email;
+            this.email.FlatAppearance.BorderSize = 0;
+            this.email.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.email.Location = new System.Drawing.Point(85, 108);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(32, 32);
+            this.email.TabIndex = 32;
+            this.tooltip.SetToolTip(this.email, "Отправить e-mail тех. поддержке");
+            this.email.UseVisualStyleBackColor = false;
+            this.email.Click += new System.EventHandler(this.email_Click);
             // 
             // windows
             // 
@@ -178,36 +178,36 @@
             this.windows.UseVisualStyleBackColor = false;
             this.windows.Click += new System.EventHandler(this.windows_Click);
             // 
-            // email
+            // vk
             // 
-            this.email.BackColor = System.Drawing.Color.Transparent;
-            this.email.BackgroundImage = global::minecraftlauncher.Properties.Resources.e_mail;
-            this.email.FlatAppearance.BorderSize = 0;
-            this.email.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.email.Location = new System.Drawing.Point(85, 108);
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(32, 32);
-            this.email.TabIndex = 32;
-            this.tooltip.SetToolTip(this.email, "Отправить e-mail тех. поддержке");
-            this.email.UseVisualStyleBackColor = false;
-            this.email.Click += new System.EventHandler(this.email_Click);
+            this.vk.BackColor = System.Drawing.Color.Transparent;
+            this.vk.BackgroundImage = global::minecraftlauncher.Properties.Resources.vk;
+            this.vk.FlatAppearance.BorderSize = 0;
+            this.vk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.vk.Location = new System.Drawing.Point(9, 108);
+            this.vk.Name = "vk";
+            this.vk.Size = new System.Drawing.Size(32, 32);
+            this.vk.TabIndex = 30;
+            this.tooltip.SetToolTip(this.vk, "Открыть группу ВК");
+            this.vk.UseVisualStyleBackColor = false;
+            this.vk.Click += new System.EventHandler(this.vk_Click);
             // 
-            // version
+            // gamefun_box
             // 
-            this.version.AutoSize = true;
-            this.version.BackColor = System.Drawing.Color.Transparent;
-            this.version.ForeColor = System.Drawing.Color.White;
-            this.version.Location = new System.Drawing.Point(49, 44);
-            this.version.Name = "version";
-            this.version.Size = new System.Drawing.Size(0, 13);
-            this.version.TabIndex = 33;
+            this.gamefun_box.BackColor = System.Drawing.Color.Transparent;
+            this.gamefun_box.Image = global::minecraftlauncher.Properties.Resources.gamefun;
+            this.gamefun_box.Location = new System.Drawing.Point(169, 31);
+            this.gamefun_box.Name = "gamefun_box";
+            this.gamefun_box.Size = new System.Drawing.Size(79, 80);
+            this.gamefun_box.TabIndex = 24;
+            this.gamefun_box.TabStop = false;
             // 
             // About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::minecraftlauncher.Properties.Resources.background2;
-            this.ClientSize = new System.Drawing.Size(323, 150);
+            this.BackgroundImage = global::minecraftlauncher.Properties.Resources.aboutform;
+            this.ClientSize = new System.Drawing.Size(260, 150);
             this.ControlBox = false;
             this.Controls.Add(this.build);
             this.Controls.Add(this.version);
@@ -229,9 +229,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "О программе";
             this.Load += new System.EventHandler(this.About_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gamefun_box)).EndInit();
             this.toppanel.ResumeLayout(false);
             this.toppanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gamefun_box)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -35,25 +35,25 @@
             this.remember_me = new System.Windows.Forms.CheckBox();
             this.update = new System.Windows.Forms.Button();
             this.download_bar = new System.Windows.Forms.ProgressBar();
-            this.password = new System.Windows.Forms.PictureBox();
-            this.nick = new System.Windows.Forms.PictureBox();
             this.password_box = new System.Windows.Forms.TextBox();
             this.site = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.information = new System.Windows.Forms.Button();
             this.panel = new System.Windows.Forms.Panel();
             this.updatelabel = new System.Windows.Forms.Label();
             this.datelabel = new System.Windows.Forms.Label();
             this.singleplayer = new System.Windows.Forms.Button();
+            this.nick = new System.Windows.Forms.PictureBox();
+            this.password = new System.Windows.Forms.PictureBox();
             this.toppanel = new System.Windows.Forms.Panel();
             this.icon_box = new System.Windows.Forms.PictureBox();
             this.toplabel = new System.Windows.Forms.Label();
             this.minimize = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.password)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nick)).BeginInit();
+            this.tooltip = new System.Windows.Forms.ToolTip(this.components);
             this.panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nick)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.password)).BeginInit();
             this.toppanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon_box)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +64,7 @@
             resources.ApplyResources(this.connect, "connect");
             this.connect.ForeColor = System.Drawing.Color.White;
             this.connect.Name = "connect";
-            this.toolTip1.SetToolTip(this.connect, resources.GetString("connect.ToolTip"));
+            this.tooltip.SetToolTip(this.connect, resources.GetString("connect.ToolTip"));
             this.connect.UseVisualStyleBackColor = false;
             this.connect.Click += new System.EventHandler(this.Start_Click);
             // 
@@ -80,7 +80,7 @@
             this.remember_me.BackColor = System.Drawing.Color.Transparent;
             this.remember_me.ForeColor = System.Drawing.Color.White;
             this.remember_me.Name = "remember_me";
-            this.toolTip1.SetToolTip(this.remember_me, resources.GetString("remember_me.ToolTip"));
+            this.tooltip.SetToolTip(this.remember_me, resources.GetString("remember_me.ToolTip"));
             this.remember_me.UseVisualStyleBackColor = false;
             // 
             // update
@@ -89,7 +89,7 @@
             resources.ApplyResources(this.update, "update");
             this.update.ForeColor = System.Drawing.Color.White;
             this.update.Name = "update";
-            this.toolTip1.SetToolTip(this.update, resources.GetString("update.ToolTip"));
+            this.tooltip.SetToolTip(this.update, resources.GetString("update.ToolTip"));
             this.update.UseVisualStyleBackColor = false;
             this.update.Click += new System.EventHandler(this.Upd_Click);
             // 
@@ -97,23 +97,7 @@
             // 
             resources.ApplyResources(this.download_bar, "download_bar");
             this.download_bar.Name = "download_bar";
-            this.toolTip1.SetToolTip(this.download_bar, resources.GetString("download_bar.ToolTip"));
-            // 
-            // password
-            // 
-            this.password.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.password, "password");
-            this.password.Name = "password";
-            this.password.TabStop = false;
-            this.toolTip1.SetToolTip(this.password, resources.GetString("password.ToolTip"));
-            // 
-            // nick
-            // 
-            this.nick.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.nick, "nick");
-            this.nick.Name = "nick";
-            this.nick.TabStop = false;
-            this.toolTip1.SetToolTip(this.nick, resources.GetString("nick.ToolTip"));
+            this.tooltip.SetToolTip(this.download_bar, resources.GetString("download_bar.ToolTip"));
             // 
             // password_box
             // 
@@ -128,7 +112,7 @@
             resources.ApplyResources(this.site, "site");
             this.site.ForeColor = System.Drawing.Color.White;
             this.site.Name = "site";
-            this.toolTip1.SetToolTip(this.site, resources.GetString("site.ToolTip"));
+            this.tooltip.SetToolTip(this.site, resources.GetString("site.ToolTip"));
             this.site.UseVisualStyleBackColor = false;
             this.site.Click += new System.EventHandler(this.Site_Click);
             // 
@@ -138,7 +122,7 @@
             resources.ApplyResources(this.information, "information");
             this.information.ForeColor = System.Drawing.Color.White;
             this.information.Name = "information";
-            this.toolTip1.SetToolTip(this.information, resources.GetString("information.ToolTip"));
+            this.tooltip.SetToolTip(this.information, resources.GetString("information.ToolTip"));
             this.information.UseVisualStyleBackColor = false;
             this.information.Click += new System.EventHandler(this.About_Click);
             // 
@@ -172,7 +156,7 @@
             resources.ApplyResources(this.datelabel, "datelabel");
             this.datelabel.ForeColor = System.Drawing.Color.White;
             this.datelabel.Name = "datelabel";
-            this.toolTip1.SetToolTip(this.datelabel, resources.GetString("datelabel.ToolTip"));
+            this.tooltip.SetToolTip(this.datelabel, resources.GetString("datelabel.ToolTip"));
             // 
             // singleplayer
             // 
@@ -180,9 +164,25 @@
             resources.ApplyResources(this.singleplayer, "singleplayer");
             this.singleplayer.ForeColor = System.Drawing.Color.White;
             this.singleplayer.Name = "singleplayer";
-            this.toolTip1.SetToolTip(this.singleplayer, resources.GetString("singleplayer.ToolTip"));
+            this.tooltip.SetToolTip(this.singleplayer, resources.GetString("singleplayer.ToolTip"));
             this.singleplayer.UseVisualStyleBackColor = false;
             this.singleplayer.Click += new System.EventHandler(this.SinglePlayer_Click);
+            // 
+            // nick
+            // 
+            this.nick.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.nick, "nick");
+            this.nick.Name = "nick";
+            this.nick.TabStop = false;
+            this.tooltip.SetToolTip(this.nick, resources.GetString("nick.ToolTip"));
+            // 
+            // password
+            // 
+            this.password.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.password, "password");
+            this.password.Name = "password";
+            this.password.TabStop = false;
+            this.tooltip.SetToolTip(this.password, resources.GetString("password.ToolTip"));
             // 
             // toppanel
             // 
@@ -218,7 +218,7 @@
             resources.ApplyResources(this.minimize, "minimize");
             this.minimize.ForeColor = System.Drawing.Color.White;
             this.minimize.Name = "minimize";
-            this.toolTip1.SetToolTip(this.minimize, resources.GetString("minimize.ToolTip"));
+            this.tooltip.SetToolTip(this.minimize, resources.GetString("minimize.ToolTip"));
             this.minimize.UseVisualStyleBackColor = true;
             this.minimize.Click += new System.EventHandler(this.Minimize_Click);
             // 
@@ -227,7 +227,7 @@
             resources.ApplyResources(this.exit, "exit");
             this.exit.ForeColor = System.Drawing.Color.White;
             this.exit.Name = "exit";
-            this.toolTip1.SetToolTip(this.exit, resources.GetString("exit.ToolTip"));
+            this.tooltip.SetToolTip(this.exit, resources.GetString("exit.ToolTip"));
             this.exit.UseVisualStyleBackColor = true;
             this.exit.Click += new System.EventHandler(this.Exit_Click);
             // 
@@ -235,7 +235,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::minecraftlauncher.Properties.Resources.background;
+            this.BackgroundImage = global::minecraftlauncher.Properties.Resources.generalform;
             this.Controls.Add(this.toppanel);
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -243,10 +243,10 @@
             this.Name = "General";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.General_FormClosing);
             this.Load += new System.EventHandler(this.General_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.password)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nick)).EndInit();
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nick)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.password)).EndInit();
             this.toppanel.ResumeLayout(false);
             this.toppanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon_box)).EndInit();
@@ -262,7 +262,7 @@
         private System.Windows.Forms.PictureBox password;
         private System.Windows.Forms.ProgressBar download_bar;
         private System.Windows.Forms.Button update;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.CheckBox remember_me;
         private System.Windows.Forms.Button information;
         private System.Windows.Forms.Panel panel;
@@ -275,7 +275,7 @@
         public System.Windows.Forms.TextBox nick_box;
         public System.Windows.Forms.TextBox password_box;
         private System.Windows.Forms.Label datelabel;
-        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolTip tooltip;
         private System.Windows.Forms.Label updatelabel;
     }
 }

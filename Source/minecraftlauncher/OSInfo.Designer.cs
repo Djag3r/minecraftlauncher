@@ -327,7 +327,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::minecraftlauncher.Properties.Resources.background1;
+            this.BackgroundImage = global::minecraftlauncher.Properties.Resources.osinfoform1;
             this.ClientSize = new System.Drawing.Size(300, 356);
             this.ControlBox = false;
             this.Controls.Add(this.pcname);

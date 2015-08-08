@@ -125,6 +125,9 @@
   <data name="connect.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
+  <data name="connect.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="connect.Location" type="System.Drawing.Point, System.Drawing">
     <value>85, 108</value>
   </data>
@@ -138,7 +141,7 @@
   <data name="connect.Text" xml:space="preserve">
     <value>Подключиться</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="tooltip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>104, 17</value>
   </metadata>
   <data name="connect.ToolTip" xml:space="preserve">
@@ -183,6 +186,9 @@
   <data name="remember_me.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="remember_me.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="remember_me.Location" type="System.Drawing.Point, System.Drawing">
     <value>94, 142</value>
   </data>
@@ -213,6 +219,9 @@
   <data name="update.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
+  <data name="update.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="update.Location" type="System.Drawing.Point, System.Drawing">
     <value>78, 304</value>
   </data>
@@ -240,6 +249,9 @@
   <data name="&gt;&gt;update.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="download_bar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="download_bar.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 337</value>
   </data>
@@ -266,6 +278,356 @@
   </data>
   <data name="&gt;&gt;download_bar.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="password_box.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 39</value>
+  </data>
+  <data name="password_box.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 20</value>
+  </data>
+  <data name="password_box.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;password_box.Name" xml:space="preserve">
+    <value>password_box</value>
+  </data>
+  <data name="&gt;&gt;password_box.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;password_box.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;password_box.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="site.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="site.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="site.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="site.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="site.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 76</value>
+  </data>
+  <data name="site.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 25</value>
+  </data>
+  <data name="site.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="site.Text" xml:space="preserve">
+    <value>На сайт!</value>
+  </data>
+  <data name="site.ToolTip" xml:space="preserve">
+    <value>Открыть сайт проекта в браузере по умолчанию</value>
+  </data>
+  <data name="&gt;&gt;site.Name" xml:space="preserve">
+    <value>site</value>
+  </data>
+  <data name="&gt;&gt;site.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;site.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;site.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="information.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="information.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="information.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 355</value>
+  </data>
+  <data name="information.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 25</value>
+  </data>
+  <data name="information.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="information.Text" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="information.ToolTip" xml:space="preserve">
+    <value>Открыть форму с информацией о программе и проекте</value>
+  </data>
+  <data name="&gt;&gt;information.Name" xml:space="preserve">
+    <value>information</value>
+  </data>
+  <data name="&gt;&gt;information.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;information.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;information.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;updatelabel.Name" xml:space="preserve">
+    <value>updatelabel</value>
+  </data>
+  <data name="&gt;&gt;updatelabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;updatelabel.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;updatelabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;datelabel.Name" xml:space="preserve">
+    <value>datelabel</value>
+  </data>
+  <data name="&gt;&gt;datelabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;datelabel.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;datelabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;singleplayer.Name" xml:space="preserve">
+    <value>singleplayer</value>
+  </data>
+  <data name="&gt;&gt;singleplayer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;singleplayer.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;singleplayer.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;nick.Name" xml:space="preserve">
+    <value>nick</value>
+  </data>
+  <data name="&gt;&gt;nick.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nick.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;nick.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;password.Name" xml:space="preserve">
+    <value>password</value>
+  </data>
+  <data name="&gt;&gt;password.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;password.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;password.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 33</value>
+  </data>
+  <data name="panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 389</value>
+  </data>
+  <data name="panel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;panel.Name" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="updatelabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="updatelabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="updatelabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 286</value>
+  </data>
+  <data name="updatelabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 13</value>
+  </data>
+  <data name="updatelabel.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="updatelabel.Text" xml:space="preserve">
+    <value>Программа не нуждается в обновлении!</value>
+  </data>
+  <data name="updatelabel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;updatelabel.Name" xml:space="preserve">
+    <value>updatelabel</value>
+  </data>
+  <data name="&gt;&gt;updatelabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;updatelabel.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;updatelabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="datelabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="datelabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="datelabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="datelabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 270</value>
+  </data>
+  <data name="datelabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 16</value>
+  </data>
+  <data name="datelabel.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="datelabel.ToolTip" xml:space="preserve">
+    <value>Текущий день, месяц и год</value>
+  </data>
+  <data name="&gt;&gt;datelabel.Name" xml:space="preserve">
+    <value>datelabel</value>
+  </data>
+  <data name="&gt;&gt;datelabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;datelabel.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;datelabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="singleplayer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="singleplayer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="singleplayer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="singleplayer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 76</value>
+  </data>
+  <data name="singleplayer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 25</value>
+  </data>
+  <data name="singleplayer.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="singleplayer.Text" xml:space="preserve">
+    <value>Одиночная игра</value>
+  </data>
+  <data name="singleplayer.ToolTip" xml:space="preserve">
+    <value>Просто запуск игры Minecraft</value>
+  </data>
+  <data name="&gt;&gt;singleplayer.Name" xml:space="preserve">
+    <value>singleplayer</value>
+  </data>
+  <data name="&gt;&gt;singleplayer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;singleplayer.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;singleplayer.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="nick.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="nick.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nick.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 13</value>
+  </data>
+  <data name="nick.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 20</value>
+  </data>
+  <data name="nick.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="nick.ToolTip" xml:space="preserve">
+    <value>Ваш логин от сайта gamefuns.ru для авторизации в системе</value>
+  </data>
+  <data name="&gt;&gt;nick.Name" xml:space="preserve">
+    <value>nick</value>
+  </data>
+  <data name="&gt;&gt;nick.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nick.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;nick.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="password.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -322,6 +684,9 @@
         piYQygAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="password.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="password.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 39</value>
   </data>
@@ -346,277 +711,74 @@
   <data name="&gt;&gt;password.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="nick.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
+  <data name="&gt;&gt;icon_box.Name" xml:space="preserve">
+    <value>icon_box</value>
   </data>
-  <data name="nick.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 13</value>
-  </data>
-  <data name="nick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 20</value>
-  </data>
-  <data name="nick.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="nick.ToolTip" xml:space="preserve">
-    <value>Ваш логин от сайта gamefuns.ru для авторизации в системе</value>
-  </data>
-  <data name="&gt;&gt;nick.Name" xml:space="preserve">
-    <value>nick</value>
-  </data>
-  <data name="&gt;&gt;nick.Type" xml:space="preserve">
+  <data name="&gt;&gt;icon_box.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nick.Parent" xml:space="preserve">
-    <value>panel</value>
+  <data name="&gt;&gt;icon_box.Parent" xml:space="preserve">
+    <value>toppanel</value>
   </data>
-  <data name="&gt;&gt;nick.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="password_box.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 39</value>
-  </data>
-  <data name="password_box.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 20</value>
-  </data>
-  <data name="password_box.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;password_box.Name" xml:space="preserve">
-    <value>password_box</value>
-  </data>
-  <data name="&gt;&gt;password_box.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;password_box.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;password_box.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="site.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="site.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="site.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="site.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 76</value>
-  </data>
-  <data name="site.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 25</value>
-  </data>
-  <data name="site.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="site.Text" xml:space="preserve">
-    <value>На сайт!</value>
-  </data>
-  <data name="site.ToolTip" xml:space="preserve">
-    <value>Открыть сайт проекта в браузере по умолчанию</value>
-  </data>
-  <data name="&gt;&gt;site.Name" xml:space="preserve">
-    <value>site</value>
-  </data>
-  <data name="&gt;&gt;site.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;site.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;site.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="information.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="information.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 355</value>
-  </data>
-  <data name="information.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 25</value>
-  </data>
-  <data name="information.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="information.Text" xml:space="preserve">
-    <value>Информация</value>
-  </data>
-  <data name="information.ToolTip" xml:space="preserve">
-    <value>Открыть форму с информацией о программе и проекте</value>
-  </data>
-  <data name="&gt;&gt;information.Name" xml:space="preserve">
-    <value>information</value>
-  </data>
-  <data name="&gt;&gt;information.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;information.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;information.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="updatelabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="updatelabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 286</value>
-  </data>
-  <data name="updatelabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 13</value>
-  </data>
-  <data name="updatelabel.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="updatelabel.Text" xml:space="preserve">
-    <value>Программа не нуждается в обновлении!</value>
-  </data>
-  <data name="updatelabel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;updatelabel.Name" xml:space="preserve">
-    <value>updatelabel</value>
-  </data>
-  <data name="&gt;&gt;updatelabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;updatelabel.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;updatelabel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;icon_box.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="datelabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;toplabel.Name" xml:space="preserve">
+    <value>toplabel</value>
   </data>
-  <data name="datelabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="datelabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 270</value>
-  </data>
-  <data name="datelabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 16</value>
-  </data>
-  <data name="datelabel.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="datelabel.ToolTip" xml:space="preserve">
-    <value>Текущий день, месяц и год</value>
-  </data>
-  <data name="&gt;&gt;datelabel.Name" xml:space="preserve">
-    <value>datelabel</value>
-  </data>
-  <data name="&gt;&gt;datelabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;toplabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;datelabel.Parent" xml:space="preserve">
-    <value>panel</value>
+  <data name="&gt;&gt;toplabel.Parent" xml:space="preserve">
+    <value>toppanel</value>
   </data>
-  <data name="&gt;&gt;datelabel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;toplabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="singleplayer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
+  <data name="&gt;&gt;minimize.Name" xml:space="preserve">
+    <value>minimize</value>
   </data>
-  <data name="singleplayer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="singleplayer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 76</value>
-  </data>
-  <data name="singleplayer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 25</value>
-  </data>
-  <data name="singleplayer.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="singleplayer.Text" xml:space="preserve">
-    <value>Одиночная игра</value>
-  </data>
-  <data name="singleplayer.ToolTip" xml:space="preserve">
-    <value>Просто запуск игры Minecraft</value>
-  </data>
-  <data name="&gt;&gt;singleplayer.Name" xml:space="preserve">
-    <value>singleplayer</value>
-  </data>
-  <data name="&gt;&gt;singleplayer.Type" xml:space="preserve">
+  <data name="&gt;&gt;minimize.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;singleplayer.Parent" xml:space="preserve">
-    <value>panel</value>
+  <data name="&gt;&gt;minimize.Parent" xml:space="preserve">
+    <value>toppanel</value>
   </data>
-  <data name="&gt;&gt;singleplayer.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;minimize.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 33</value>
+  <data name="&gt;&gt;exit.Name" xml:space="preserve">
+    <value>exit</value>
   </data>
-  <data name="panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 389</value>
+  <data name="&gt;&gt;exit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panel.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="&gt;&gt;exit.Parent" xml:space="preserve">
+    <value>toppanel</value>
   </data>
-  <data name="&gt;&gt;panel.Name" xml:space="preserve">
-    <value>panel</value>
+  <data name="&gt;&gt;exit.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;panel.Type" xml:space="preserve">
+  <data name="toppanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toppanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 32</value>
+  </data>
+  <data name="toppanel.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;toppanel.Name" xml:space="preserve">
+    <value>toppanel</value>
+  </data>
+  <data name="&gt;&gt;toppanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;toppanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;toppanel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="icon_box.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -635,6 +797,9 @@
         tzDK289VYv5xY32drYr/ylWVQh6KOKmT8r9IcY2y/ebydXG1xTCppOfqTv7xjYZ6d3X/pbmqELSEInby
         JOFSla/snO5sO77eUPdP8PdcEd1s8jc18rqr67+EIH4CzNgoquaWm/AAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="icon_box.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="icon_box.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 9</value>
@@ -662,6 +827,9 @@
   </data>
   <data name="toplabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="toplabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="toplabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>38, 8</value>
@@ -729,6 +897,9 @@
   <data name="exit.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
+  <data name="exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="exit.Location" type="System.Drawing.Point, System.Drawing">
     <value>293, 5</value>
   </data>
@@ -755,27 +926,6 @@
   </data>
   <data name="&gt;&gt;exit.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="toppanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="toppanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 32</value>
-  </data>
-  <data name="toppanel.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;toppanel.Name" xml:space="preserve">
-    <value>toppanel</value>
-  </data>
-  <data name="&gt;&gt;toppanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toppanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;toppanel.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -3316,16 +3466,16 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Minecraft Launcher </value>
   </data>
-  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
-    <value>timer1</value>
+  <data name="&gt;&gt;timer.Name" xml:space="preserve">
+    <value>timer</value>
   </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+  <data name="&gt;&gt;timer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
-    <value>toolTip1</value>
+  <data name="&gt;&gt;tooltip.Name" xml:space="preserve">
+    <value>tooltip</value>
   </data>
-  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+  <data name="&gt;&gt;tooltip.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

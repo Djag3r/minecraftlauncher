@@ -133,7 +133,22 @@ namespace minecraftlauncher
                     case "10.0.10130":
                         osName = "Windows 10 (Technical Preview build 10130)";
                         break;
-                        #endregion
+                    case "10.0.10158":
+                        osName = "Windows 10 (Technical Preview build 10158)";
+                        break;
+                    case "10.0.10159":
+                        osName = "Windows 10 (Technical Preview build 10159)";
+                        break;
+                    case "10.0.10162":
+                        osName = "Windows 10 (Technical Preview build 10162)";
+                        break;
+                    case "10.0.10166":
+                        osName = "Windows 10 (Technical Preview build 10166)";
+                        break;
+                    #endregion
+                    case "10.0.10240":
+                        osName = "Windows 10";
+                        break;
                 }
             }
 

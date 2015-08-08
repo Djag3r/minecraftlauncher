@@ -102,7 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::minecraftlauncher.Properties.Resources.background3;
+            this.BackgroundImage = global::minecraftlauncher.Properties.Resources.updateform;
             this.ClientSize = new System.Drawing.Size(239, 105);
             this.ControlBox = false;
             this.Controls.Add(this.toppanel);

@@ -1,0 +1,16 @@
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\bin\Release\MinecraftLauncher.exe.config
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\bin\Release\MinecraftLauncher.exe.manifest
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\bin\Release\MinecraftLauncher.application
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\bin\Release\MinecraftLauncher.exe
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\bin\Release\MinecraftLauncher.pdb
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Release\minecraftlauncher.About.resources
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Release\minecraftlauncher.General.resources
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Release\minecraftlauncher.Listening.resources
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Release\minecraftlauncher.OSInfo.resources
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Release\minecraftlauncher.Properties.Resources.resources
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Release\minecraftlauncher.Updating.resources
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Release\minecraftlauncher.csproj.GenerateResource.Cache
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Release\MinecraftLauncher.exe.manifest
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Release\MinecraftLauncher.application
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Release\MinecraftLauncher.exe
+D:\Important\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Release\MinecraftLauncher.pdb

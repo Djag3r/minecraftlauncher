@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.IO;
+using minecraftlauncher.Properties;
 
 namespace minecraftlauncher
 {
@@ -44,8 +46,8 @@ namespace minecraftlauncher
         private void General_Load(object sender, EventArgs e)
         {
             remember_me.Checked = true;
-            nick_box.Text = Properties.Settings.Default.nick;
-            password_box.Text = Properties.Settings.Default.password; //Загружаем наши данные
+            nick_box.Text = Settings.Default.nick;
+            password_box.Text = Settings.Default.password; //Загружаем наши данные
             DateTime datetime = DateTime.Today;
             datelabel.Text = datetime.ToString("dd.MM.yyyy");
         }
@@ -70,7 +72,7 @@ namespace minecraftlauncher
             button3.Enabled = false;
             button4.Enabled = false;
             button5.Enabled = false;
-            timer1.Start();
+            timer.Start();
             Upd.EachFileUpdMD5("");*/
         }
 
@@ -82,7 +84,7 @@ namespace minecraftlauncher
                 progressBar1.Visible = false;
                 label3.Visible = false;
                 label4.Visible = false;
-                timer1.Stop();
+                timer.Stop();
                 button1.Enabled = true;
                 button3.Enabled = true;
                 button4.Enabled = true;
@@ -96,9 +98,9 @@ namespace minecraftlauncher
         {
             if (remember_me.Checked == true)
             {
-                Properties.Settings.Default.nick = nick_box.Text;
-                Properties.Settings.Default.password = password_box.Text;
-                Properties.Settings.Default.Save(); //Сохраняем наши данные
+                Settings.Default.nick = nick_box.Text;
+                Settings.Default.password = password_box.Text;
+                Settings.Default.Save(); //Сохраняем наши данные
             }
             else
             {
@@ -118,46 +120,77 @@ namespace minecraftlauncher
             if (dr == DialogResult.Yes)
             {
                 string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-                ProcessStartInfo mcStartInfo = new ProcessStartInfo("javaw", "-Xms1G -Xmx1G -cp \"" + appData + "\\.minecraft\\bin\\minecraft.jar;" + appData + "\\.minecraft\\bin\\jinput.jar;" + appData + "\\.minecraft\\bin\\lwjgl.jar;" + appData + "\\.minecraft\\bin\\lwjgl_util.jar \" -Djava.library.path=\"" + appData + "\\.minecraft\\bin\\natives\" net.minecraft.client.Minecraft" + " " + nick_box.Text);
-                Process.Start(mcStartInfo);
-                Application.Exit();
+                string mcPath = appData + "\\.minecraft";
+
+                if (Directory.Exists(mcPath))
+                {
+                    ProcessStartInfo mcStartInfo = new ProcessStartInfo("javaw", "-Xms1G -Xmx1G -cp \""
+                   + appData + "\\.minecraft\\bin\\minecraft.jar;"
+                   + appData + "\\.minecraft\\bin\\jinput.jar;"
+                   + appData + "\\.minecraft\\bin\\lwjgl.jar;"
+                   + appData + "\\.minecraft\\bin\\lwjgl_util.jar \" -Djava.library.path=\""
+                   + appData + "\\.minecraft\\bin\\natives\" net.minecraft.client.Minecraft"
+                   + " "
+                   + Settings.Default.nick);
+                    Process.Start(mcStartInfo);
+                    Application.Exit();
+                }
+                else
+                {
+                    MessageBox.Show("Minecraft Launcher не обнаружил или не смог запустить Minecraft! Пожалуйста, установите игру или проверьте ее наличие. " +
+                    "Также, если вы используете х64-битную систему, убедитесь, что у вас установлены как х64-bit, так и х32-bit версии Java. " +
+                    "В скором времени программа сама будет предлагать скачать и установить игру в таких ситуациях.", "Не удалось запустить Minecraft!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //Скачивание с FTP: сервера настроенной версии Minecraft 1.5.2 от GameFuN             
+                }
             }
-            else 
+
+            if (dr == DialogResult.No)
             {
                 string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-                string Directory = ".minecraft";
-                ProcessStartInfo mcStartInfo = new ProcessStartInfo("javaw.exe", "-Xincgc -Xms1G -Xmx1G" +
-                " -Djava.library.path=\"" +
-                appData + "\\" + Directory + "\\versions\\1.7.10\\natives\"" + " -cp \"" +
-                appData + "\\" + Directory + "\\libraries\\java3d\\vecmath\\1.3.1\\vecmath-1.3.1.jar;" +
-                appData + "\\" + Directory + "\\libraries\\net\\sf\\trove4j\\trove4j\\3.0.3\\trove4j-3.0.3.jar;" +
-                appData + "\\" + Directory + "\\libraries\\com\\ibm\\icu\\icu4j-core-mojang\\51.2\\icu4j-core-mojang-51.2.jar;" +
-                appData + "\\" + Directory + "\\libraries\\net\\sf\\jopt-simple\\jopt-simple\\4.5\\jopt-simple-4.5.jar;" +
-                appData + "\\" + Directory + "\\libraries\\com\\paulscode\\codecjorbis\\20101023\\codecjorbis-20101023.jar;" +
-                appData + "\\" + Directory + "\\libraries\\com\\paulscode\\codecwav\\20101023\\codecwav-20101023.jar;" +
-                appData + "\\" + Directory + "\\libraries\\com\\paulscode\\libraryjavasound\\20101123\\libraryjavasound-20101123.jar;" +
-                appData + "\\" + Directory + "\\libraries\\com\\paulscode\\librarylwjglopenal\\20100824\\librarylwjglopenal-20100824.jar;" +
-                appData + "\\" + Directory + "\\libraries\\com\\paulscode\\soundsystem\\20120107\\soundsystem-20120107.jar;" +
-                appData + "\\" + Directory + "\\libraries\\io\\netty\\netty-all\\4.0.10.Final\\netty-all-4.0.10.Final.jar;" +
-                appData + "\\" + Directory + "\\libraries\\com\\google\\guava\\guava\\15.0\\guava-15.0.jar;" +
-                appData + "\\" + Directory + "\\libraries\\org\\apache\\commons\\commons-lang3\\3.1\\commons-lang3-3.1.jar;" +
-                appData + "\\" + Directory + "\\libraries\\commons-io\\commons-io\\2.4\\commons-io-2.4.jar;" +
-                appData + "\\" + Directory + "\\libraries\\net\\java\\jinput\\jinput\\2.0.5\\jinput-2.0.5.jar;" +
-                appData + "\\" + Directory + "\\libraries\\net\\java\\jutils\\jutils\\1.0.0\\jutils-1.0.0.jar;" +
-                appData + "\\" + Directory + "\\libraries\\com\\google\\code\\gson\\gson\\2.2.4\\gson-2.2.4.jar;" +
-                appData + "\\" + Directory + "\\libraries\\com\\mojang\\authlib\\1.3\\authlib-1.3.jar;" +
-                appData + "\\" + Directory + "\\libraries\\org\\apache\\logging\\log4j\\log4j-api\\2.0-beta9\\log4j-api-2.0-beta9.jar;" +
-                appData + "\\" + Directory + "\\libraries\\org\\apache\\logging\\log4j\\log4j-core\\2.0-beta9\\log4j-core-2.0-beta9.jar;" +
-                appData + "\\" + Directory + "\\libraries\\org\\lwjgl\\lwjgl\\lwjgl\\2.9.1-nightly-20131120\\lwjgl-2.9.1-nightly-20131120.jar;" +
-                appData + "\\" + Directory + "\\libraries\\org\\lwjgl\\lwjgl\\lwjgl_util\\2.9.1-nightly-20131120\\lwjgl_util-2.9.1-nightly-20131120.jar;" +
-                appData + "\\" + Directory + " \\libraries\\tv\\twitch\\twitch\\5.12\\twitch-5.12.jar;" +
-                appData + "\\" + Directory + "\\versions\\1.7.10\\1.7.10.jar\" " +
-                "net.minecraft.client.main.Main " +
-                "--username " + nick_box.Text + " --version 1.7.10 --gameDir " +
-                appData + "\\" + Directory + " --assetsDir " +
-                appData + "\\" + Directory + "\\assets --assetIndex 1.7.3 --uuid 123 --accessToken  123 --userProperties {} --userType legacy");
-                Process.Start(mcStartInfo);
-                Application.Exit();
+                string mcPath = appData + "\\.minecraft";
+
+                if (Directory.Exists(mcPath))
+                {
+                    ProcessStartInfo mcStartInfo = new ProcessStartInfo("javaw.exe", "-Xincgc -Xms1G -Xmx1G" +
+                    " -Djava.library.path=\"" +
+                    appData + "\\.minecraft\\versions\\1.7.10\\natives\"" + " -cp \"" +
+                    appData + "\\.minecraft\\libraries\\java3d\\vecmath\\1.3.1\\vecmath-1.3.1.jar;" +
+                    appData + "\\.minecraft\\libraries\\net\\sf\\trove4j\\trove4j\\3.0.3\\trove4j-3.0.3.jar;" +
+                    appData + "\\.minecraft\\libraries\\com\\ibm\\icu\\icu4j-core-mojang\\51.2\\icu4j-core-mojang-51.2.jar;" +
+                    appData + "\\.minecraft\\libraries\\net\\sf\\jopt-simple\\jopt-simple\\4.5\\jopt-simple-4.5.jar;" +
+                    appData + "\\.minecraft\\libraries\\com\\paulscode\\codecjorbis\\20101023\\codecjorbis-20101023.jar;" +
+                    appData + "\\.minecraft\\libraries\\com\\paulscode\\codecwav\\20101023\\codecwav-20101023.jar;" +
+                    appData + "\\.minecraft\\libraries\\com\\paulscode\\libraryjavasound\\20101123\\libraryjavasound-20101123.jar;" +
+                    appData + "\\.minecraft\\libraries\\com\\paulscode\\librarylwjglopenal\\20100824\\librarylwjglopenal-20100824.jar;" +
+                    appData + "\\.minecraft\\libraries\\com\\paulscode\\soundsystem\\20120107\\soundsystem-20120107.jar;" +
+                    appData + "\\.minecraft\\libraries\\io\\netty\\netty-all\\4.0.10.Final\\netty-all-4.0.10.Final.jar;" +
+                    appData + "\\.minecraft\\libraries\\com\\google\\guava\\guava\\15.0\\guava-15.0.jar;" +
+                    appData + "\\.minecraft\\libraries\\org\\apache\\commons\\commons-lang3\\3.1\\commons-lang3-3.1.jar;" +
+                    appData + "\\.minecraft\\libraries\\commons-io\\commons-io\\2.4\\commons-io-2.4.jar;" +
+                    appData + "\\.minecraft\\libraries\\net\\java\\jinput\\jinput\\2.0.5\\jinput-2.0.5.jar;" +
+                    appData + "\\.minecraft\\libraries\\net\\java\\jutils\\jutils\\1.0.0\\jutils-1.0.0.jar;" +
+                    appData + "\\.minecraft\\libraries\\com\\google\\code\\gson\\gson\\2.2.4\\gson-2.2.4.jar;" +
+                    appData + "\\.minecraft\\libraries\\com\\mojang\\authlib\\1.3\\authlib-1.3.jar;" +
+                    appData + "\\.minecraft\\libraries\\org\\apache\\logging\\log4j\\log4j-api\\2.0-beta9\\log4j-api-2.0-beta9.jar;" +
+                    appData + "\\.minecraft\\libraries\\org\\apache\\logging\\log4j\\log4j-core\\2.0-beta9\\log4j-core-2.0-beta9.jar;" +
+                    appData + "\\.minecraft\\libraries\\org\\lwjgl\\lwjgl\\lwjgl\\2.9.1-nightly-20131120\\lwjgl-2.9.1-nightly-20131120.jar;" +
+                    appData + "\\.minecraft\\libraries\\org\\lwjgl\\lwjgl\\lwjgl_util\\2.9.1-nightly-20131120\\lwjgl_util-2.9.1-nightly-20131120.jar;" +
+                    appData + "\\.minecraft\\libraries\\tv\\twitch\\twitch\\5.12\\twitch-5.12.jar;" +
+                    appData + "\\.minecraft\\versions\\1.7.10\\1.7.10.jar\" " +
+                    "net.minecraft.client.main.Main " +
+                    "--username " + Settings.Default.nick + " --version 1.7.10 --gameDir " +
+                    appData + "\\.minecraft --assetsDir " +
+                    appData + "\\.minecraft\\assets --assetIndex 1.7.3 --uuid 123 --accessToken  123 --userProperties {} --userType legacy");
+                    Process.Start(mcStartInfo);
+                    Application.Exit();
+                }
+                else
+                {
+                    MessageBox.Show("Minecraft Launcher не обнаружил или не смог запустить Minecraft! Пожалуйста, установите игру или проверьте ее наличие. " +
+                    "Также, если вы используете х64-битную систему, убедитесь, что у вас установлены как х64-bit, так и х32-bit версии Java. " +
+                    "В скором времени программа сама будет предлагать скачать и установить игру в таких ситуациях.", "Не удалось запустить Minecraft!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //Скачивание с FTP: сервера настроенной версии Minecraft выше, чем 1.5.2 от GameFuN
+                }
             }
         }
 
