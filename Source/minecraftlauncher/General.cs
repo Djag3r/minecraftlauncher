@@ -48,8 +48,6 @@ namespace minecraftlauncher
             remember_me.Checked = true;
             nick_box.Text = Settings.Default.nick;
             password_box.Text = Settings.Default.password; //Загружаем наши данные
-            DateTime datetime = DateTime.Today;
-            datelabel.Text = datetime.ToString("dd.MM.yyyy");
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -59,40 +57,17 @@ namespace minecraftlauncher
 
         private void Minimize_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+            WindowState = FormWindowState.Minimized;
         }
 
-        private void Upd_Click(object sender, EventArgs e)
+        private void update_Click(object sender, EventArgs e)
         {
-            //progressBar1.Visible = true;
-            updatelabel.Visible = true;
-            /*label4.Visible = true;
-            label3.Text = Upd.EachFileUpdMD5("");
-            button1.Enabled = false;
-            button3.Enabled = false;
-            button4.Enabled = false;
-            button5.Enabled = false;
+            exit.Enabled = false;
+            update.Enabled = false;
+            download_bar.Visible = true;
             timer.Start();
-            Upd.EachFileUpdMD5("");*/
+            download_bar.Refresh();
         }
-
-        /*private void timer1_Tick(object sender, EventArgs e)
-        {
-            progressBar1.Increment(+5);
-            if (progressBar1.Value == 100)
-            {
-                progressBar1.Visible = false;
-                label3.Visible = false;
-                label4.Visible = false;
-                timer.Stop();
-                button1.Enabled = true;
-                button3.Enabled = true;
-                button4.Enabled = true;
-                button5.Enabled = true;
-                Updating upd = new Updating();
-                upd.ShowDialog();
-            }
-        }*/
 
         private void General_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -256,6 +231,20 @@ namespace minecraftlauncher
                 Point loc = new Point(Location.X + dx, Location.Y + dy);
                 Location = loc;
                 last = cur;
+            }
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            download_bar.Increment(+1);
+            if (download_bar.Value == 100)
+            {
+                exit.Enabled = true;
+                update.Enabled = true;
+                updatelabel.Visible = true;
+                timer.Stop();
+                //Updating upd = new Updating();
+                //upd.ShowDialog();
             }
         }
     }

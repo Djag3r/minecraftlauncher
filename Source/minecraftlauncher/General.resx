@@ -157,7 +157,7 @@
     <value>panel</value>
   </data>
   <data name="&gt;&gt;connect.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="nick_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -181,7 +181,7 @@
     <value>panel</value>
   </data>
   <data name="&gt;&gt;nick_box.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="remember_me.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -214,7 +214,7 @@
     <value>panel</value>
   </data>
   <data name="&gt;&gt;remember_me.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="update.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -247,7 +247,7 @@
     <value>panel</value>
   </data>
   <data name="&gt;&gt;update.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="download_bar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -277,7 +277,7 @@
     <value>panel</value>
   </data>
   <data name="&gt;&gt;download_bar.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="password_box.Location" type="System.Drawing.Point, System.Drawing">
     <value>95, 39</value>
@@ -298,7 +298,7 @@
     <value>panel</value>
   </data>
   <data name="&gt;&gt;password_box.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="site.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -337,7 +337,7 @@
     <value>panel</value>
   </data>
   <data name="&gt;&gt;site.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -373,88 +373,7 @@
     <value>panel</value>
   </data>
   <data name="&gt;&gt;information.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;updatelabel.Name" xml:space="preserve">
-    <value>updatelabel</value>
-  </data>
-  <data name="&gt;&gt;updatelabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;updatelabel.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;updatelabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;datelabel.Name" xml:space="preserve">
-    <value>datelabel</value>
-  </data>
-  <data name="&gt;&gt;datelabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;datelabel.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;datelabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;singleplayer.Name" xml:space="preserve">
-    <value>singleplayer</value>
-  </data>
-  <data name="&gt;&gt;singleplayer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;singleplayer.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;singleplayer.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;nick.Name" xml:space="preserve">
-    <value>nick</value>
-  </data>
-  <data name="&gt;&gt;nick.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nick.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;nick.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="&gt;&gt;password.Name" xml:space="preserve">
-    <value>password</value>
-  </data>
-  <data name="&gt;&gt;password.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;password.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;password.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 33</value>
-  </data>
-  <data name="panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 389</value>
-  </data>
-  <data name="panel.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;panel.Name" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;panel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="updatelabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -488,39 +407,6 @@
   </data>
   <data name="&gt;&gt;updatelabel.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="datelabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="datelabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="datelabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="datelabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 270</value>
-  </data>
-  <data name="datelabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 16</value>
-  </data>
-  <data name="datelabel.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="datelabel.ToolTip" xml:space="preserve">
-    <value>Текущий день, месяц и год</value>
-  </data>
-  <data name="&gt;&gt;datelabel.Name" xml:space="preserve">
-    <value>datelabel</value>
-  </data>
-  <data name="&gt;&gt;datelabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;datelabel.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;datelabel.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="singleplayer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -556,7 +442,7 @@
     <value>panel</value>
   </data>
   <data name="&gt;&gt;singleplayer.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="nick.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -615,7 +501,7 @@
     <value>16</value>
   </data>
   <data name="nick.ToolTip" xml:space="preserve">
-    <value>Ваш логин от сайта gamefuns.ru для авторизации в системе</value>
+    <value>Ваш логин от сайта &lt;...&gt; для авторизации в системе</value>
   </data>
   <data name="&gt;&gt;nick.Name" xml:space="preserve">
     <value>nick</value>
@@ -627,7 +513,7 @@
     <value>panel</value>
   </data>
   <data name="&gt;&gt;nick.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="password.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -697,7 +583,7 @@
     <value>17</value>
   </data>
   <data name="password.ToolTip" xml:space="preserve">
-    <value>Ваш пароль от сайта gamefuns.ru для авторизации в системе</value>
+    <value>Ваш пароль от сайта &lt;...&gt; для авторизации в системе</value>
   </data>
   <data name="&gt;&gt;password.Name" xml:space="preserve">
     <value>password</value>
@@ -709,76 +595,28 @@
     <value>panel</value>
   </data>
   <data name="&gt;&gt;password.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;icon_box.Name" xml:space="preserve">
-    <value>icon_box</value>
+  <data name="panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 33</value>
   </data>
-  <data name="&gt;&gt;icon_box.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 389</value>
   </data>
-  <data name="&gt;&gt;icon_box.Parent" xml:space="preserve">
-    <value>toppanel</value>
+  <data name="panel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
-  <data name="&gt;&gt;icon_box.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panel.Name" xml:space="preserve">
+    <value>panel</value>
   </data>
-  <data name="&gt;&gt;toplabel.Name" xml:space="preserve">
-    <value>toplabel</value>
-  </data>
-  <data name="&gt;&gt;toplabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toplabel.Parent" xml:space="preserve">
-    <value>toppanel</value>
-  </data>
-  <data name="&gt;&gt;toplabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;minimize.Name" xml:space="preserve">
-    <value>minimize</value>
-  </data>
-  <data name="&gt;&gt;minimize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;minimize.Parent" xml:space="preserve">
-    <value>toppanel</value>
-  </data>
-  <data name="&gt;&gt;minimize.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;exit.Name" xml:space="preserve">
-    <value>exit</value>
-  </data>
-  <data name="&gt;&gt;exit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;exit.Parent" xml:space="preserve">
-    <value>toppanel</value>
-  </data>
-  <data name="&gt;&gt;exit.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="toppanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="toppanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 32</value>
-  </data>
-  <data name="toppanel.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;toppanel.Name" xml:space="preserve">
-    <value>toppanel</value>
-  </data>
-  <data name="&gt;&gt;toppanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toppanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;toppanel.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panel.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="icon_box.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -926,6 +764,27 @@
   </data>
   <data name="&gt;&gt;exit.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="toppanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toppanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 32</value>
+  </data>
+  <data name="toppanel.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;toppanel.Name" xml:space="preserve">
+    <value>toppanel</value>
+  </data>
+  <data name="&gt;&gt;toppanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toppanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toppanel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

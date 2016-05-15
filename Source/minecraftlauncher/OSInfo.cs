@@ -74,6 +74,10 @@ namespace minecraftlauncher
                             else if (os.Version.Minor == 2)
                                 osName = "Windows 8";
                             break;
+                        case 10:
+                            if (os.Version.Minor == 0)
+                            osName = "Windows 10";
+                            break;
                     }
                     break;
             }

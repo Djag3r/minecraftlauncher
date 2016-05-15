@@ -83,7 +83,7 @@ namespace minecraftlauncher
         private void About_Load(object sender, EventArgs e)
         {
             version.Text = "0.6";
-            build.Text = "7D30";
+            build.Text = "7D37";
         }
     }
 }

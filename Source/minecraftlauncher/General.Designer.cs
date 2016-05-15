@@ -41,7 +41,6 @@
             this.information = new System.Windows.Forms.Button();
             this.panel = new System.Windows.Forms.Panel();
             this.updatelabel = new System.Windows.Forms.Label();
-            this.datelabel = new System.Windows.Forms.Label();
             this.singleplayer = new System.Windows.Forms.Button();
             this.nick = new System.Windows.Forms.PictureBox();
             this.password = new System.Windows.Forms.PictureBox();
@@ -91,7 +90,7 @@
             this.update.Name = "update";
             this.tooltip.SetToolTip(this.update, resources.GetString("update.ToolTip"));
             this.update.UseVisualStyleBackColor = false;
-            this.update.Click += new System.EventHandler(this.Upd_Click);
+            this.update.Click += new System.EventHandler(this.update_Click);
             // 
             // download_bar
             // 
@@ -116,6 +115,10 @@
             this.site.UseVisualStyleBackColor = false;
             this.site.Click += new System.EventHandler(this.Site_Click);
             // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // information
             // 
             this.information.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -130,7 +133,6 @@
             // 
             this.panel.BackColor = System.Drawing.Color.Transparent;
             this.panel.Controls.Add(this.updatelabel);
-            this.panel.Controls.Add(this.datelabel);
             this.panel.Controls.Add(this.singleplayer);
             this.panel.Controls.Add(this.nick);
             this.panel.Controls.Add(this.information);
@@ -150,13 +152,6 @@
             resources.ApplyResources(this.updatelabel, "updatelabel");
             this.updatelabel.ForeColor = System.Drawing.Color.White;
             this.updatelabel.Name = "updatelabel";
-            // 
-            // datelabel
-            // 
-            resources.ApplyResources(this.datelabel, "datelabel");
-            this.datelabel.ForeColor = System.Drawing.Color.White;
-            this.datelabel.Name = "datelabel";
-            this.tooltip.SetToolTip(this.datelabel, resources.GetString("datelabel.ToolTip"));
             // 
             // singleplayer
             // 
@@ -274,7 +269,6 @@
         private System.Windows.Forms.PictureBox icon_box;
         public System.Windows.Forms.TextBox nick_box;
         public System.Windows.Forms.TextBox password_box;
-        private System.Windows.Forms.Label datelabel;
         private System.Windows.Forms.ToolTip tooltip;
         private System.Windows.Forms.Label updatelabel;
     }
