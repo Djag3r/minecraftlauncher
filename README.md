@@ -1,5 +1,5 @@
 # Minecraft Launcher
-This source code is GameFuN Minecraft Launcher by GameFuN (http://vk.com/gamefun_vk). 
+This source code is Minecraft Launcher by Syntax (http://vk.com/syntaxproject). 
 Please, use MS Visual Studio 2010 or higher. 
 The program interface on RUSSIAN language.
 
