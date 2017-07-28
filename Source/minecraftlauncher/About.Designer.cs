@@ -39,13 +39,13 @@
             this.buildlabel = new System.Windows.Forms.Label();
             this.tooltip = new System.Windows.Forms.ToolTip(this.components);
             this.build = new System.Windows.Forms.Label();
-            this.version = new System.Windows.Forms.Label();
             this.email = new System.Windows.Forms.Button();
             this.windows = new System.Windows.Forms.Button();
             this.vk = new System.Windows.Forms.Button();
-            this.gamefun_box = new System.Windows.Forms.PictureBox();
+            this.version = new System.Windows.Forms.Label();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.toppanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gamefun_box)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // ok
@@ -68,9 +68,9 @@
             this.copyleftlabel.ForeColor = System.Drawing.Color.White;
             this.copyleftlabel.Location = new System.Drawing.Point(7, 70);
             this.copyleftlabel.Name = "copyleftlabel";
-            this.copyleftlabel.Size = new System.Drawing.Size(112, 13);
+            this.copyleftlabel.Size = new System.Drawing.Size(69, 13);
             this.copyleftlabel.TabIndex = 21;
-            this.copyleftlabel.Text = "2011-2015, GameFuN";
+            this.copyleftlabel.Text = "2017, Syntax";
             // 
             // namelabel
             // 
@@ -140,16 +140,6 @@
             this.build.TabIndex = 34;
             this.tooltip.SetToolTip(this.build, "Номер построения (только в DEBUG-релизах)");
             // 
-            // version
-            // 
-            this.version.AutoSize = true;
-            this.version.BackColor = System.Drawing.Color.Transparent;
-            this.version.ForeColor = System.Drawing.Color.White;
-            this.version.Location = new System.Drawing.Point(49, 44);
-            this.version.Name = "version";
-            this.version.Size = new System.Drawing.Size(0, 13);
-            this.version.TabIndex = 33;
-            // 
             // email
             // 
             this.email.BackColor = System.Drawing.Color.Transparent;
@@ -192,15 +182,24 @@
             this.vk.UseVisualStyleBackColor = false;
             this.vk.Click += new System.EventHandler(this.vk_Click);
             // 
-            // gamefun_box
+            // version
             // 
-            this.gamefun_box.BackColor = System.Drawing.Color.Transparent;
-            this.gamefun_box.Image = global::minecraftlauncher.Properties.Resources.gamefun;
-            this.gamefun_box.Location = new System.Drawing.Point(169, 31);
-            this.gamefun_box.Name = "gamefun_box";
-            this.gamefun_box.Size = new System.Drawing.Size(79, 80);
-            this.gamefun_box.TabIndex = 24;
-            this.gamefun_box.TabStop = false;
+            this.version.AutoSize = true;
+            this.version.BackColor = System.Drawing.Color.Transparent;
+            this.version.ForeColor = System.Drawing.Color.White;
+            this.version.Location = new System.Drawing.Point(49, 44);
+            this.version.Name = "version";
+            this.version.Size = new System.Drawing.Size(0, 13);
+            this.version.TabIndex = 33;
+            // 
+            // logo
+            // 
+            this.logo.BackColor = System.Drawing.Color.Transparent;
+            this.logo.Location = new System.Drawing.Point(169, 31);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(79, 80);
+            this.logo.TabIndex = 35;
+            this.logo.TabStop = false;
             // 
             // About
             // 
@@ -209,6 +208,7 @@
             this.BackgroundImage = global::minecraftlauncher.Properties.Resources.aboutform;
             this.ClientSize = new System.Drawing.Size(260, 150);
             this.ControlBox = false;
+            this.Controls.Add(this.logo);
             this.Controls.Add(this.build);
             this.Controls.Add(this.version);
             this.Controls.Add(this.email);
@@ -216,7 +216,6 @@
             this.Controls.Add(this.vk);
             this.Controls.Add(this.buildlabel);
             this.Controls.Add(this.toppanel);
-            this.Controls.Add(this.gamefun_box);
             this.Controls.Add(this.versionlabel);
             this.Controls.Add(this.namelabel);
             this.Controls.Add(this.copyleftlabel);
@@ -231,7 +230,7 @@
             this.Load += new System.EventHandler(this.About_Load);
             this.toppanel.ResumeLayout(false);
             this.toppanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gamefun_box)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,7 +242,6 @@
         private System.Windows.Forms.Label copyleftlabel;
         private System.Windows.Forms.Label namelabel;
         private System.Windows.Forms.Label versionlabel;
-        private System.Windows.Forms.PictureBox gamefun_box;
         private System.Windows.Forms.Panel toppanel;
         private System.Windows.Forms.Label toplabel;
         public System.Windows.Forms.Label buildlabel;
@@ -253,5 +251,6 @@
         private System.Windows.Forms.Button email;
         private System.Windows.Forms.Label version;
         public System.Windows.Forms.Label build;
+        private System.Windows.Forms.PictureBox logo;
     }
 }

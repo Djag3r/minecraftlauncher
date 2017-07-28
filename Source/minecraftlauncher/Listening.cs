@@ -1,9 +1,8 @@
-//===== GameFuN, 2011-2015 =====\\
+//===== Syntax, 2017 =====\\
 
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Diagnostics;
 
 namespace minecraftlauncher
 {
@@ -36,18 +35,14 @@ namespace minecraftlauncher
         }
 
         private void cancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        { this.Close(); }
 
+        #region Перемещение мышью
         Point last;
 
         private void toppanel_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                last = MousePosition;
-            }
+            if (e.Button == MouseButtons.Left) last = MousePosition;
         }
 
         private void toppanel_MouseMove(object sender, MouseEventArgs e)
@@ -65,10 +60,7 @@ namespace minecraftlauncher
 
         private void toplabel_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                last = MousePosition;
-            }
+            if (e.Button == MouseButtons.Left) last = MousePosition;
         }
 
         private void toplabel_MouseMove(object sender, MouseEventArgs e)
@@ -83,5 +75,6 @@ namespace minecraftlauncher
                 last = cur;
             }
         }
+        #endregion
     }
 }

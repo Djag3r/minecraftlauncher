@@ -1,4 +1,4 @@
-//===== GameFuN, 2011-2015 =====\\
+//===== Syntax, 2017 =====\\
 
 using System;
 using System.Drawing;
@@ -16,6 +16,7 @@ namespace minecraftlauncher
             InitializeComponent();
         }
 
+        #region Management Object Searcher (WMI)
         ManagementObjectSearcher videosearcher =
         new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_VideoController");
         ManagementObjectSearcher processorsearcher =
@@ -26,7 +27,9 @@ namespace minecraftlauncher
         new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_DiskDrive");
         ManagementObjectSearcher mbsearcher =
         new ManagementObjectSearcher("\\root\\CIMV2", "SELECT * From Win32_BaseBoard");
+        #endregion
 
+        #region Метод получения имени ОС
         private string GetOSName()
         {
             string osName = "Unknown";
@@ -73,10 +76,6 @@ namespace minecraftlauncher
                                 osName = "Windows 7";
                             else if (os.Version.Minor == 2)
                                 osName = "Windows 8";
-                            break;
-                        case 10:
-                            if (os.Version.Minor == 0)
-                            osName = "Windows 10";
                             break;
                     }
                     break;
@@ -151,50 +150,45 @@ namespace minecraftlauncher
                         break;
                     #endregion
                     case "10.0.10240":
-                        osName = "Windows 10";
+                        osName = "Windows 10 Threshold 1";
+                        break;
+                    case "10.0.10586":
+                        osName = "Windows 10 Threshold 2";
+                        break;
+                    case "10.0.14393":
+                        osName = "Windows 10 Creators Update";
+                        break;
+                    case "10.0.15063":
+                        osName = "Windows 10 Creators Update";
                         break;
                 }
             }
-
             return osName;
         }
+        #endregion
 
         private void OSInfo_Load(object sender, EventArgs e)
         {
+            #region Вывод имени ОС, разрядности, имени ПК, состояния сети и разрешения экрана
             os.Text = GetOSName();
 
-            if (Environment.Is64BitOperatingSystem == true)
-            {
-                bit.Text = "64 bit";
-            }
-            else
-            {
-                bit.Text = "32 bit";
-            }
+            if (Environment.Is64BitOperatingSystem == true) bit.Text = "64 bit";
+            else bit.Text = "32 bit";
+
             pcname.Text = Environment.MachineName.ToString();
-            //System.Management.Instrumentation.
+
             double h = Screen.PrimaryScreen.Bounds.Width;
             double w = Screen.PrimaryScreen.Bounds.Height;
             resolution.Text = h+"x"+w;
-            IPStatus status = IPStatus.Unknown;
-            try 
-            {
-                status = new Ping().Send("google.com").Status;
-            } 
-            catch 
-            {
-                //kek
-            }
- 
-            if (status == IPStatus.Success) 
-            {
-                internet.Text = "Connect";
-            } 
-            else 
-            {
-                internet.Text = "Disconnect";
-            }
 
+            IPStatus status = IPStatus.Unknown;
+            try { status = new Ping().Send("google.com").Status; }
+            catch { /*kek*/ }
+            if (status == IPStatus.Success) internet.Text = "Connect";
+            else internet.Text = "Disconnect";
+            #endregion
+
+            #region Получение RAM, CPU, GPU, HDD, MB
             foreach (ManagementObject queryObj in memorysearcher.Get())
             {
                 double ramsize = ToDouble(queryObj["TotalPhysicalMemory"]);
@@ -212,21 +206,18 @@ namespace minecraftlauncher
             }
             foreach (ManagementObject queryObj in mbsearcher.Get())
             { mb.Text = queryObj["Manufacturer"].ToString() + ", " + queryObj["Product"].ToString(); }
+            #endregion
         }
 
         private void ok_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        { this.Close(); } //Закрытие формы
 
+        #region Перемещение мышью
         Point last;
 
         private void toppanel_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                last = MousePosition;
-            }
+            if (e.Button == MouseButtons.Left) last = MousePosition;
         }
 
         private void toppanel_MouseMove(object sender, MouseEventArgs e)
@@ -244,10 +235,7 @@ namespace minecraftlauncher
 
         private void toplabel_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                last = MousePosition;
-            }
+            if (e.Button == MouseButtons.Left) last = MousePosition;
         }
 
         private void toplabel_MouseMove(object sender, MouseEventArgs e)
@@ -262,5 +250,6 @@ namespace minecraftlauncher
                 last = cur;
             }
         }
+        #endregion
     }
 }

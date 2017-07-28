@@ -1,4 +1,4 @@
-﻿//===== GameFuN, 2011-2015 =====\\ 
+﻿//===== Syntax, 2017 =====\\ 
 
 using System;
 using System.Windows.Forms;

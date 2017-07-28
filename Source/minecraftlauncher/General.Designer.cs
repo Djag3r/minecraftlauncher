@@ -65,7 +65,7 @@
             this.connect.Name = "connect";
             this.tooltip.SetToolTip(this.connect, resources.GetString("connect.ToolTip"));
             this.connect.UseVisualStyleBackColor = false;
-            this.connect.Click += new System.EventHandler(this.Start_Click);
+            this.connect.Click += new System.EventHandler(this.Multiplayer_Click);
             // 
             // nick_box
             // 
