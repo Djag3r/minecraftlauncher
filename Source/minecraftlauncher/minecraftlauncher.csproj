@@ -214,6 +214,7 @@
     <None Include="Resources\generalform.png" />
     <None Include="Resources\listeningform.png" />
     <Content Include="Resources\login.png" />
+    <None Include="Resources\logo.png" />
     <Content Include="Resources\minecraft.ico" />
     <None Include="Resources\minecraft.png" />
     <None Include="Resources\osinfoform.png" />

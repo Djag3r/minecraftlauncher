@@ -70,7 +70,7 @@
             this.copyleftlabel.Name = "copyleftlabel";
             this.copyleftlabel.Size = new System.Drawing.Size(69, 13);
             this.copyleftlabel.TabIndex = 21;
-            this.copyleftlabel.Text = "2017, Syntax";
+            this.copyleftlabel.Text = "2018, Syntax";
             // 
             // namelabel
             // 
@@ -195,9 +195,10 @@
             // logo
             // 
             this.logo.BackColor = System.Drawing.Color.Transparent;
+            this.logo.Image = global::minecraftlauncher.Properties.Resources.logo;
             this.logo.Location = new System.Drawing.Point(169, 31);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(79, 80);
+            this.logo.Size = new System.Drawing.Size(80, 80);
             this.logo.TabIndex = 35;
             this.logo.TabStop = false;
             // 

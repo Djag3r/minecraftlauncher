@@ -1,4 +1,4 @@
-//===== Syntax, 2017 =====\\
+//===== Syntax, 2018 =====\\
 
 using System;
 using System.Drawing;
@@ -72,7 +72,7 @@ namespace minecraftlauncher
         private void About_Load(object sender, EventArgs e)
         {
             version.Text = "0.8";
-            build.Text = "8D08";
+            build.Text = "8D94";
             logo.Select();
         }
     }

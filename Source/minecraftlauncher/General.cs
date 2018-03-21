@@ -1,4 +1,4 @@
-//===== Syntax, 2017 =====\\
+//===== Syntax, 2018 =====\\
 
 using System;
 using System.Collections.Generic;
@@ -66,11 +66,19 @@ namespace minecraftlauncher
 
         private void update_Click(object sender, EventArgs e)
         {
-            exit.Enabled = false;
+            /*exit.Enabled = false;
             update.Enabled = false;
             download_bar.Visible = true;
             timer.Start();
             download_bar.Refresh();
+            nick.Select();
+            */
+           
+            if (MessageBox.Show("К сожалению, лаунчер пока не умеет обновляться сам! Проверьте наличие нового билда на GitHub. " +
+                "Желаете перейти в ветку лаунчера на GitHub?", "О системе обновления", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Process.Start(@"https://github.com/Djag3r/minecraftlauncher");
+            }
             nick.Select();
         }
 
