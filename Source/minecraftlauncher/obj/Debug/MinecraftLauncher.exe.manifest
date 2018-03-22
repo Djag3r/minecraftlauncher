@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MinecraftLauncher.exe" size="1500160">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MinecraftLauncher.exe" size="1497600">
       <assemblyIdentity name="MinecraftLauncher" version="5.0.0.3" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>CB8JIkD1z69ND71xIQO5MhSm3xM=</dsig:DigestValue>
+        <dsig:DigestValue>TQxuFrT4uaJGU7YzQue4FCCZ4yc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

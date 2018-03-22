@@ -71,8 +71,8 @@ namespace minecraftlauncher
 
         private void About_Load(object sender, EventArgs e)
         {
-            version.Text = "0.8";
-            build.Text = "8D94";
+            version.Text = "0.9";
+            build.Text = "9D02";
             logo.Select();
         }
     }

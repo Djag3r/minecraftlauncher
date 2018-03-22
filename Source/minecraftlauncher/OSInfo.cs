@@ -93,74 +93,24 @@ namespace minecraftlauncher
                     case "6.3.9600":
                         osName = "Windows 8.1";
                         break;
-                    #region Experemental support for Windows 10 (Technical Preview)
-                    case "6.4.9841":
-                        osName = "Windows 10 (Technical Preview build 9841)";
-                        break;
-                    case "6.4.9879":
-                        osName = "Windows 10 (Technical Preview build 9879)";
-                        break;
-                    case "10.0.9926":
-                        osName = "Windows 10 (Technical Preview build 9926) (CORTANA!)";
-                        break;
-                    case "10.0.9888":
-                        osName = "Windows 10 (Technical Preview build 9888)";
-                        break;
-                    case "10.0.10041":
-                        osName = "Windows 10 (Technical Preview build 10041)";
-                        break;
-                    case "10.0.10049":
-                        osName = "Windows 10 (Technical Preview build 10049) (SPARTAN!)";
-                        break;
-                    case "10.0.10056":
-                        osName = "Windows 10 (Technical Preview build 10056)";
-                        break;
-                    case "10.0.10061":
-                        osName = "Windows 10 (Technical Preview build 10061)";
-                        break;
-                    case "10.0.10074":
-                        osName = "Windows 10 (Technical Preview build 10074)";
-                        break;
-                    case "10.0.10114":
-                        osName = "Windows 10 (Technical Preview build 10114)";
-                        break;
-                    case "10.0.10120":
-                        osName = "Windows 10 (Technical Preview build 10120)";
-                        break;
-                    case "10.0.10122":
-                        osName = "Windows 10 (Technical Preview build 10122)";
-                        break;
-                    case "10.0.10125":
-                        osName = "Windows 10 (Technical Preview build 10125)";
-                        break;
-                    case "10.0.10130":
-                        osName = "Windows 10 (Technical Preview build 10130)";
-                        break;
-                    case "10.0.10158":
-                        osName = "Windows 10 (Technical Preview build 10158)";
-                        break;
-                    case "10.0.10159":
-                        osName = "Windows 10 (Technical Preview build 10159)";
-                        break;
-                    case "10.0.10162":
-                        osName = "Windows 10 (Technical Preview build 10162)";
-                        break;
-                    case "10.0.10166":
-                        osName = "Windows 10 (Technical Preview build 10166)";
-                        break;
-                    #endregion
+
+                    #region Windows 10 support
                     case "10.0.10240":
-                        osName = "Windows 10 Threshold 1";
+                        osName = "Windows 10 Threshold 1 (Initial Version)";
                         break;
                     case "10.0.10586":
-                        osName = "Windows 10 Threshold 2";
+                        osName = "Windows 10 Threshold 2 (November Update)";
                         break;
                     case "10.0.14393":
-                        osName = "Windows 10 Creators Update";
+                        osName = "Windows 10 Redstone 1 (Anniversary Update)";
                         break;
                     case "10.0.15063":
-                        osName = "Windows 10 Creators Update";
+                        osName = "Windows 10 Redstone 2 (Creators Update)";
                         break;
+                    case "10.0.16299":
+                        osName = "Windows 10 Redstone 3 (Fall Creators Update)";
+                        break;
+                        #endregion
                 }
             }
             return osName;

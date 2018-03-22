@@ -228,6 +228,7 @@
             // 
             // General
             // 
+            this.AcceptButton = this.singleplayer;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::minecraftlauncher.Properties.Resources.generalform;

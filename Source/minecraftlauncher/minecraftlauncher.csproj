@@ -208,7 +208,6 @@
     <None Include="Resources\updateform.png" />
     <None Include="Resources\vk.png" />
     <None Include="Resources\windows.png" />
-    <None Include="Resources\gamefun.png" />
     <None Include="Resources\e-mail.png" />
     <None Include="Resources\aboutform.png" />
     <None Include="Resources\generalform.png" />

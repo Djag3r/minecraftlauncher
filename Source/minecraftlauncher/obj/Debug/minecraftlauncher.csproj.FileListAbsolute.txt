@@ -49,3 +49,4 @@ D:\Documents\GitHub\minecraftlauncher\Source\minecraftlauncher\bin\Debug\Minecra
 D:\Documents\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\MinecraftLauncher.exe.manifest
 D:\Documents\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\MinecraftLauncher.application
 D:\Documents\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\minecraftlauncher.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\minecraftlauncher\Source\minecraftlauncher\obj\Debug\minecraftlauncher.csprojResolveAssemblyReference.cache
